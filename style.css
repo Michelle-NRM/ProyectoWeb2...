@@ -1,0 +1,621 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --padding-container: 100px 0;
+  --color-title: #001a49;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/*conteiner*/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: var(--padding-container);
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url(./imagenes/pelu2.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+.nav {
+  --padding-container: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav_title {
+  font-weight: 300;
+}
+
+.nav_items {
+  list-style: none;
+  font-size: 25px;
+}
+
+.nav_link {
+  margin-left: auto;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 32px;
+}
+
+.nav_links {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav_menu {
+  margin-left: auto;
+  cursor: pointer;
+  display: none;
+}
+
+.nav_img {
+  display: block;
+  width: 30px;
+}
+
+.nav_close {
+  display: none;
+}
+
+/* Hero container */
+
+.hero_container {
+  max-width: 800px;
+  --padding-conteiner: 0;
+  display: grid;
+  grid-auto-rows: max-content;
+  align-content: center;
+  gap: 12px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.hero_title {
+  font-size: 48px;
+}
+
+.hero_paragraph {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.cta {
+  display: inline-block;
+  background-color: #2091f9;
+  justify-self: center;
+  text-decoration: none;
+  padding: 13px 30px;
+  border-radius: 32px;
+}
+/* About */
+
+.about {
+  text-align: center;
+  padding-top: 20%;
+}
+
+.subtitle {
+  color: var(--color-title);
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.about_paragraph {
+  line-height: 1.7;
+}
+
+.about_main {
+  padding-top: 80px;
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  gap: 12px;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
+.about_icons {
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+  width: 260px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.about_icon {
+  width: 40px;
+}
+
+/* Knowledge */
+
+.knowledge {
+  background-color: #e5e5f7;
+
+  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 10px 10px;
+  overflow: hidden;
+}
+
+.knowledge_conteiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.knowledge_picture {
+  max-width: 500px;
+}
+
+.knowledge_paragraph {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.knowledge_img {
+  width: 100%;
+  display: block;
+}
+
+/* Price */
+.hero_price {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+
+.hero_price::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url(./imagenes/manos.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+.subtitle_price {
+  color: var(--color-title);
+  font-size: 32px;
+  margin-top: 80px;
+}
+
+.price {
+  text-align: center;
+}
+
+.price_table {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.price_element {
+  background-color: #deb769;
+  text-align: center;
+  border-radius: 10px;
+  width: 330px;
+  padding: 40px;
+  --color-plan: #3b3949;
+  --color-price: #1d293f;
+  --bg-cta: #d78a3d;
+  --color-items: #2a2642;
+}
+
+.price_name {
+  color: var(--color-plan);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.plan_price {
+  font-size: 24px;
+  color: var(--color-price);
+}
+
+.price_items {
+  margin-top: 30px;
+  display: grid;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: var(--color-items);
+}
+
+.price_cta {
+  display: block;
+  padding: 20px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: var(--bg-cta);
+  font-weight: 600;
+  color: #e5e5f7;
+}
+
+.price_element--best {
+  background-color: #de7a06;
+  --color-plan: #462317;
+  --color-price: #1d293f;
+  --bg-cta: #f03e0cca;
+  --color-items: #2a2642;
+}
+
+.price_img {
+  width: calc(100% + 80px);
+  margin-left: -40px;
+  height: calc(100% + 80);
+  margin-top: -40px;
+  border-radius: 10px;
+}
+
+/* Enlace curso peluqueria*/
+.hero_pelu {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+
+.hero_pelu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url(./imagenes/pelu.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+.cta_pelu {
+  display: inline-block;
+  background-color: #d78a3d;
+  justify-self: center;
+  text-decoration: none;
+  padding: 20px 50px;
+  color: #e5e5f7;
+  font-size: 24px;
+  border-radius: 6px;
+}
+
+/* Testimony*/
+
+.testimony {
+  background-color: #d9cde5;
+}
+
+.testimony_container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  gap: 32px;
+  align-items: center;
+}
+
+.testimony_body {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.testimony_body--show {
+  pointer-events: unset;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.testimony_img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 30% 30%;
+}
+.testimony_texts {
+  max-width: 700px;
+}
+
+.testimony_course {
+  background-color: #804b91;
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.testimony_arrow {
+  width: 90%;
+  cursor: pointer;
+}
+
+/*Questions*/
+
+.hero_questions {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+.hero_questions::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url(./imagenes/questions2.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+.questions {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.questions_container {
+  display: grid;
+  gap: 2em;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.questions_padding {
+  padding: 0;
+  transition: padding 0.2s;
+  border: 1px solid #5454d4;
+  border-radius: 6px;
+}
+
+.questions_padding--add {
+  padding-bottom: 30px;
+}
+
+.questions_answer {
+  padding: 0 30px 0;
+  overflow: hidden;
+}
+
+.questions_title {
+  display: flex;
+  font-size: 20px;
+  padding: 30px 0 30px;
+  cursor: pointer;
+  color: var(--color-title);
+  justify-content: space-between;
+}
+
+.questions_arrow {
+  border-radius: 50px;
+  background-color: var(--color-title);
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.questions_arrow--rotate {
+  transform: rotate(180deg);
+}
+
+.questions_show {
+  /*con esto funciona el hidden*/
+  text-align: left;
+  height: 0;
+  transition: height 0.3s;
+}
+
+.questions_img {
+  display: block;
+}
+
+.questions_copy {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.questions_offer {
+  padding-bottom: 50px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #e5e5f7;
+}
+
+.footer_container {
+  margin-left: 230px;
+  margin-right: 230px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+
+.footer_items {
+  list-style: none;
+  font-size: 25px;
+}
+
+.footer_links {
+  color: #2e0358;
+  text-decoration: none;
+}
+
+.footer_img {
+  width: 40px;
+  margin: 10px;
+}
+
+/*Contacto*/
+.hero_contacto {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+
+.hero_contacto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url(./imagenes/contacto.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+.form_container {
+  display: flex;
+  background-color: #fff;
+  height: 750px;
+  width: 1000px;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 25px;
+}
+
+.form {
+  padding: 30px 80px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 15px;
+  color: #36214b;
+  margin-bottom: 15px;
+}
+.box {
+  border: 0;
+  background-color: #e1dae8;
+  padding: 15px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  outline: none;
+}
+
+.submit {
+  background-color: #714e7d;
+  border: 0;
+  padding: 15px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 250px;
+  margin-top: 25px;
+  margin-left: 45px;
+}
+
+.info {
+  padding: 50px;
+}
+
+.img_1 {
+  width: 350px;
+  margin-bottom: 75px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  margin-left: 50px;
+}
+
+.icon {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.icon img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.icon p {
+  font-size: 14px;
+  color: var(--color-price);
+}
