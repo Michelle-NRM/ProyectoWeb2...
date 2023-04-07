@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina principal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@300;400;600;700&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="hero_contacto">
+      <nav class="nav container">
+        <div class="nav_logo">
+          <h2 class="nav_title">Curso profesional</h2>
+        </div>
+        <ul class="nav_link nav_link--menu">
+          <li class="nav_items">
+            <a href="./index.html" class="nav_links">Inicio</a>
+          </li>
+          <li class="nav_items">
+            <a href="#" class="nav_links">Preguntas</a>
+          </li>
+          <li class="nav_items">
+            <a href="./price.html" class="nav_links">Planes</a>
+          </li>
+          <li class="nav_items">
+            <a href="#" class="nav_links">Contactanos</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="hero_container container">
+        <h1 class="hero_title">Contactanos</h1>
+        <p class="hero_paragraph">
+          Queremos conocer sus consultas o sugerencias. Por favor complete el
+          formularlo para saber lo que Usted piensa de nuestra empresa. Sus
+          comentarios y sugerencias son muy importantes para nosotros.
+        </p>
+      </section>
+    </header>
+    <div class="form_container">
+      <form class="form">
+        <h3 class="subtitle">ESCRIBENOS</h3>
+        <label for="nombre">Escribe tu nombre</label>
+        <input type="text" id="nombre" class="box" />
+        <label for="correo">Escribe tu correo</label>
+        <input type="email" id="correo" class="box" />
+        <label for="mensaje">Escribe tu mensaje</label>
+        <textarea
+          class="box"
+          name=""
+          id="mensaje"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input type="submit" value="enviar" class="submit" />
+      </form>
+      <div class="info">
+        <img src="./imagenes/contacto.img.webp" class="img_1" alt="" />
+        <div class="location">
+          <div class="icon">
+            <img src="./imagenes/location.svg" alt="" />
+            <p>Direccion tal</p>
+          </div>
+          <div class="icon">
+            <img src="./imagenes/phone.svg" alt="" />
+            <p>Numero tal</p>
+          </div>
+          <div class="icon">
+            <img src="./imagenes/email.svg" alt="" />
+            <p>Email tal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <section class="footer_container">
+        <nav>
+          <ul class="nav_footer">
+            <li class="footer_items">
+              <a href="#" class="footer_links">Inicio</a>
+            </li>
+            <li class="footer_items">
+              <a href="./questions.html" class="footer_links">Preguntas</a>
+            </li>
+            <li class="footer_items">
+              <a href="./price.html" class="footer_links">Planes</a>
+            </li>
+            <li class="footer_items">
+              <a href="./contacto.html" class="footer_links">Contactanos</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer_social">
+          <a href="#"
+            ><img src="./imagenes/facebook.svg" class="footer_img" alt="icono"
+          /></a>
+          <a href="#"
+            ><img src="./imagenes/twitter.svg" class="footer_img" alt="icono"
+          /></a>
+          <a href="#"
+            ><img src="./imagenes/youtube.svg" class="footer_img" alt="icono"
+          /></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
