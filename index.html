@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@300;400;600;700&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="nav_logo">
+          <h2 class="nav_title">Curso profesional</h2>
+        </div>
+        <ul class="nav_link nav_link--menu">
+          <li class="nav_items">
+            <a href="#" class="nav_links">Inicio</a>
+          </li>
+          <li class="nav_items">
+            <a href="./questions.html" class="nav_links">Preguntas</a>
+          </li>
+          <li class="nav_items">
+            <a href="./price.html" class="nav_links">Planes</a>
+          </li>
+          <li class="nav_items">
+            <a href="./contacto.html" class="nav_links">Contactanos</a>
+          </li>
+
+          <img src="./imagenes/close.svg" class="nav_close" alt="cerrar" />
+        </ul>
+
+        <div class="nav_menu">
+          <img src="./imagenes/menu.svg" class="nav_img" alt="menu" />
+        </div>
+      </nav>
+      <section class="hero_container container">
+        <h1 class="hero_title">Aprende peluqueria con nosotros</h1>
+        <p class="hero_paragraph">
+          Elige aprender peluqueria de una vez con los mejores profesionales,una
+          vez que termines este curso seras capaz de hacer cortes de alta
+          gama,peinados de toda clase y ser colorista.
+        </p>
+        <a href="#" class="cta">Comienza ahora</a>
+      </section>
+    </header>
+
+    <main>
+      <section class="container about">
+        <h2 class="subtitle">¿Que aprenderas con nosotros?</h2>
+        <p class="about_paragraph">
+          Todo lo necesario para convertirte en un peluquero
+          profecional,corte,barberia,solorimetria,peinados,etc
+        </p>
+        <div class="about_main">
+          <article class="about_icons">
+            <img src="./imagenes/color.svg" class="about_icon" alt="icono" />
+            <h3 class="about_title">Colorimetria</h3>
+            <p class="about_paragraph">
+              La colorimetría capilar se enfoca a clasificar numéricamente los
+              colores y tonos de tintes según una escala de colores de oscuros a
+              claros.
+            </p>
+          </article>
+          <article class="about_icons">
+            <img src="./imagenes/cut.svg" class="about_icon" alt="icono" />
+            <h3 class="about_title">Corte y peinado</h3>
+            <p class="about_paragraph">
+              Te enseñamos diferentes estilos de cortes y peinados, además de
+              consejos y trucos para lucir un cabello perfecto.
+            </p>
+          </article>
+          <article class="about_icons">
+            <img src="./imagenes/fnife.svg" class="about_icon" alt="icono" />
+            <h3 class="about_title">Barberia</h3>
+            <p class="about_paragraph">
+              En este curso de barbería aprenderás aplicar los procedimientos
+              asociados al afeitado, el corte y arreglo del pelo, barba o bigote
+              de los hombres.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="knowledge">
+        <div class="knowledge_conteiner container">
+          <div class="knowledge_texts">
+            <h2 class="subtitle">
+              Completa todos nuestros cursos y se un profesional
+            </h2>
+            <p class="knowledge_paragraph">
+              Domina todas las areas de la peluqieria y crece
+              profesionalmente,aprende diferentes cortes,mezclar colores y
+              barberia con distintos estilos.
+            </p>
+            <a href="#" class="cta">Entra al curso</a>
+          </div>
+          <figure class="knowledge_picture">
+            <img
+              src="./imagenes/peluque.jpg"
+              alt="imagen"
+              class="knowledge_img"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="testimony">
+        <div class="testimony_container container">
+          <img
+            src="imagenes/left.svg"
+            class="testimony_arrow"
+            alt="flecha"
+            id="before"
+          />
+          <section class="testimony_body testimony_body--show" data-id="1">
+            <div class="testimony_texts">
+              <h2 class="subtitle">
+                Mi nombre es tal,
+                <span class="testimony_course">Estudiante</span>
+              </h2>
+              <p class="testimony_review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                inventore libero aliquid tempora ipsa harum nisi mollitia
+                blanditiis sed velit ad, molestias dignissimos voluptates alias
+                exercitationem fugit! Itaque, fugiat exercitationem?
+              </p>
+            </div>
+            <figure class="testimony_picture">
+              <img src="./imagenes/face1.jpg" alt="" class="testimony_img" />
+            </figure>
+          </section>
+          <section class="testimony_body" data-id="2">
+            <div class="testimony_texts">
+              <h2 class="subtitle">
+                Mi nombre es tal,
+                <span class="testimony_course">Estudiante</span>
+              </h2>
+              <p class="testimony_review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                inventore libero aliquid tempora ipsa harum nisi mollitia
+                blanditiis sed velit ad, molestias dignissimos voluptates alias
+                exercitationem fugit! Itaque, fugiat exercitationem?
+              </p>
+            </div>
+            <figure class="testimony_picture">
+              <img src="./imagenes/face2.jpg" alt="" class="testimony_img" />
+            </figure>
+          </section>
+          <section class="testimony_body" data-id="3">
+            <div class="testimony_texts">
+              <h2 class="subtitle">
+                Mi nombre es tal,
+                <span class="testimony_course">Estudiante</span>
+              </h2>
+              <p class="testimony_review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                inventore libero aliquid tempora ipsa harum nisi mollitia
+                blanditiis sed velit ad, molestias dignissimos voluptates alias
+                exercitationem fugit! Itaque, fugiat exercitationem?
+              </p>
+            </div>
+            <figure class="testimony_picture">
+              <img src="./imagenes/face3.jpg" alt="" class="testimony_img" />
+            </figure>
+          </section>
+          <img
+            src="./imagenes/right.svg"
+            class="testimony_arrow"
+            alt="flecha"
+            id="next"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer_container">
+        <nav>
+          <ul class="nav_footer">
+            <li class="footer_items">
+              <a href="#" class="footer_links">Inicio</a>
+            </li>
+            <li class="footer_items">
+              <a href="./questions.html" class="footer_links">Preguntas</a>
+            </li>
+            <li class="footer_items">
+              <a href="./price.html" class="footer_links">Planes</a>
+            </li>
+            <li class="footer_items">
+              <a href="./contacto.html" class="footer_links">Contactanos</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer_social">
+          <a href="#"
+            ><img src="./imagenes/facebook.svg" class="footer_img" alt="icono"
+          /></a>
+          <a href="#"
+            ><img src="./imagenes/twitter.svg" class="footer_img" alt="icono"
+          /></a>
+          <a href="#"
+            ><img src="./imagenes/youtube.svg" class="footer_img" alt="icono"
+          /></a>
+        </div>
+      </section>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
