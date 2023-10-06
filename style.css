@@ -619,3 +619,76 @@ label {
   font-size: 14px;
   color: var(--color-price);
 }
+
+/*Reserva*/
+.hero_color {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+
+.hero_color::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url(./imagenes/color.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+/*Reserva*/
+.hero_barberia {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+
+.hero_barberia::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url(./imagenes/bar.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+.hero_todo {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+
+.hero_todo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url(./imagenes/full.jpg);
+  background-size: cover;
+  z-index: -1;
+}
